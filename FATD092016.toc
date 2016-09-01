@@ -5,11 +5,11 @@
 \beamer@subsectionintoc {2}{2}{Yield function with mean stress effect}{8}{0}{1}
 \beamer@subsectionintoc {2}{3}{Local plastic model}{10}{0}{1}
 \beamer@sectionintoc {3}{Construction of an energy based fatigue approach}{12}{0}{2}
-\beamer@sectionintoc {4}{Damage accumulation}{16}{0}{3}
-\beamer@sectionintoc {5}{Loop on time and scales}{18}{0}{4}
-\beamer@subsectionintoc {5}{1}{Integration rules for $\mathaccentV {dot}05F{W}$ and $\delta D$}{19}{0}{4}
-\beamer@subsectionintoc {5}{2}{Regime determination under multiple scales}{22}{0}{4}
-\beamer@sectionintoc {6}{Application}{27}{0}{5}
-\beamer@subsectionintoc {6}{1}{One dimensional application to simple cyclic data}{28}{0}{5}
-\beamer@subsectionintoc {6}{2}{One dimensional application to PSA data}{33}{0}{5}
-\beamer@subsectionintoc {6}{3}{Multi-dimensional application to PSA data}{39}{0}{5}
+\beamer@sectionintoc {4}{Damage accumulation}{15}{0}{3}
+\beamer@sectionintoc {5}{Loop on time and scales}{17}{0}{4}
+\beamer@subsectionintoc {5}{1}{Integration rules for $\mathaccentV {dot}05F{W}$ and $\delta D$}{18}{0}{4}
+\beamer@subsectionintoc {5}{2}{Regime determination under multiple scales}{21}{0}{4}
+\beamer@sectionintoc {6}{Application}{26}{0}{5}
+\beamer@subsectionintoc {6}{1}{One dimensional application to simple cyclic data}{27}{0}{5}
+\beamer@subsectionintoc {6}{2}{One dimensional application to PSA data}{32}{0}{5}
+\beamer@subsectionintoc {6}{3}{Multi-dimensional application to PSA data}{38}{0}{5}

@@ -46,7 +46,7 @@
 	}
 	
 \vspace{12pt}
-\date{\tiny 24 September 2016}
+\date{\tiny 23 September 2016}
 % Optionnel. La date, généralement celle du jour de la conférence
 
 \subject{Sujet de votre diaporama}
@@ -167,7 +167,7 @@ The idea is to consider as in the work of Maitournam and Krebs that the yield li
 f\left(s\right)=||\uline{\uline{S}}(s)-\uline{\uline{b}}(s)||+\left( \lambda \Sigma_H-\sigma_y\right) /s\leqslant 0
 \label{yieldfun}
 \end{equation}
-with $\uline{\uline{S}}$ denoting the deviatoric part of the stress tensor at microscale, and $\uline{\uline{b}}(s)$ the corresponding backstress at the same scale.
+with $\uline{\uline{S}}(s)$ denoting the deviatoric part of the stress tensor at microscale, and $\uline{\uline{b}}(s)$ the corresponding backstress at the same scale.
 \end{frame}	
 
 \subsection{Local plastic model}
@@ -193,13 +193,15 @@ $$\dot{w}(s,M,t)=(\uline{\uline{S}}-\uline{\uline{b}})(s,M,t):\uline{\uline{\dot
 
 \section{Construction of an energy based fatigue approach}
 \begin{frame}
-	\frametitle{Uniaxial load with plastic dissipation}	
+	\frametitle{Uniaxial cyclic load}	
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=0.9\textwidth]{figures//backstress.png} 
 		\label{backstress}
 	\end{figure}
 \end{frame}	
+
+\begin{comment}
 \begin{frame}
 	\frametitle{Description of the mesoscopic stress state}	
 In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
@@ -216,13 +218,13 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 \end{enumerate}	
 
 \end{frame}	
-
+\end{comment}
 
 
 
 \begin{frame}
 	\frametitle{Cyclic load calculation}	
-	\begin{block}{Energy dissipation in different phases}
+	\begin{block}{Energy dissipation at one scale s}
 		\begin{itemize}
 			\item $dW=(S-b)d\varepsilon^p=\dfrac{(E-k)(1+\nu) }{E(E+k\nu)}\dfrac{\sigma_y-\lambda \Sigma_H}{s}\left(S_{max}-\dfrac{\sigma_y-\lambda \Sigma_H}{s}\right)
 			$ (phase 1)
@@ -231,7 +233,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 			\item $dW(phase 1)=dW(phase 5)=\dfrac{1}{2}dW(phase 3).$
 	    \end{itemize}	
 	\end{block}
-	\begin{block}{The local dissipated energy $W$  at point $M$ during one cycle}
+	\begin{block}{Total dissipated energy $W$  at all scales during one cycle}
 		\begin{equation}
 		\begin{split}
 		W_{cyc}&=4\int_{\left( \sigma_y-\lambda \Sigma_H\right) /S_{max}}^{\infty}dW(s,M,t)P(s)ds
@@ -254,7 +256,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 	\label{dt}
 \end{equation}
 	\end{block}
-	$W_F$ is the total energy stored in the material.	
+	$W_F$ is the energy threshold of the material.	
 		\begin{block}{ Generalized damage accumulation}	
 \begin{equation}\dot{W}(M,t)=\int_{s=1}^{\infty}\dot{w}(s,M,t)P(s)ds=\int_{s=1}^{\infty}\left(\uline{\uline{S}}-\uline{\uline{b}} \right) (s,M,t):\uline{\uline{\dot{\varepsilon}^p}}(s,M,t)P(s)ds.
 \end{equation}
@@ -271,7 +273,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 \item There are certain limitations of cycle counting method. Firstly we need a load history decomposition in cycles. Secondly in real life the perfect close loop cycle is hardly applicable.
 					
 \vspace{6pt}
-\item We propose in a more general method which can be integrated by a step by step strategy. 
+\item We propose in a more general method which can be integrated using a step by step strategy. 
 					
 \vspace{6pt}
 \item Instead of doing the scale integration directly which can be difficult for complex loading, the Gaussian Quadrature rule with Legendre points is used to give the value of local dissipated energy rate.
@@ -460,7 +462,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialreal1d1.png} 
-	\caption{$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in PSA load history}
+	\caption{$\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\| _{trial}$ and $\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|$ evolution with time under different weakening scales in PSA load history}
 	\label{trialreal}
 \end{figure}
 \end{frame}	
@@ -470,7 +472,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=\textwidth]{figures//trialreal1d2.png} 
-		\caption{Circled area magnification where there is more $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\sigma_y$(plasticity) at scale $s_1$ than at $s_8$}
+		\caption{Circled area magnification where there is more $\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}>\sigma_y$(plasticity) at scale $s_1$ than at $s_8$}
 		\label{trialreal1d3}
 	\end{figure}
 \end{frame}	
@@ -538,7 +540,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=\textwidth]{figures//trialreal3d.png} 
-	\caption{$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}$ and $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)$ evolution with time under different weakening scales in PSA load history}
+	\caption{$\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}$ and $\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|$ evolution with time under different weakening scales in PSA load history}
 	\label{trialreal3d2}
 \end{figure} 
 \end{frame}	
