@@ -113,7 +113,8 @@
 \item	We follow the Dang Van paradigm. The structure is elastic at the macroscopic scale. 
 \vspace{6pt}
 	
-\item	At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding, which contribute to energy dissipation without affecting the overall macroscopic stress.
+\item	At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding,
+ which contribute to energy dissipation without affecting the overall macroscopic stress.
 \vspace{6pt}	
 
 \end{enumerate}	
@@ -385,7 +386,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 		Initial damage                                              & $D=0$                          \\
 		Initial time                                                & $t=0$ s                            \\
 		Dissipated energy to failure per unit volume                & $W_F=3e6$ J                       \\
-		Looping step                                           & 1 s              \\ \hline
+		Looping step                                           & 1e-4 s              \\ \hline
 	\end{tabular}
 	\caption{Material parameters in a simple cyclic load }
 	\label{Sin}
@@ -447,7 +448,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
  	\begin{block}{Numerical methods:}
 
 			\begin{itemize}
-				\item 	The sample recording rate is 256 per second. In order to accumulate damage using very small steps, we have created 10 additional points between every 2 recorded points by linear interpolation. So the sample rate is $256*10$ per second.
+				\item 	The sample recording rate is 256 per second. In order to accumulate damage using very small steps, we have created 10 additional points between every 2 recorded points by linear interpolation.
 				\vspace{6pt}
 				\item The force on wheel is firstly considered as under uniaxial loading $F_x$. Here we temporally set $\Sigma_x=F_x/A$ where $A=\dfrac{1}{6e5} m^2$ is the area of force, and $W_F=3e6 J$. 
 		\end{itemize}
