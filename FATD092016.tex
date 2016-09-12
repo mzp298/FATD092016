@@ -117,6 +117,7 @@
  which contribute to energy dissipation without affecting the overall macroscopic stress.
 \vspace{6pt}	
 
+\item	Fatigue function of energy dissipation.
 \end{enumerate}	
 \end{frame}	
 
@@ -134,15 +135,9 @@ From a microscopic point of view, there is a distribution of weakening scales, n
 \item	$\sigma_y/S_{max}\leqslant s\leqslant \infty$ $\longrightarrow$ $S_{max}\geqslant \sigma_y/s$ $\longrightarrow$ plastic regime $\longrightarrow$  energy dissipation.
 \end{itemize}
 	\vspace{6pt}
-Which is to say at each scale $s$ there is a weakened yield limit $\sigma_y/s$, zero initial plastic strain $\uline{\uline{\varepsilon}}_p$ and zero initial backstress $\uline{\uline{b}}$ at initial time $t_0$.
-
-	\vspace{6pt}
 	We assume the weakening scales have a probability distribution of power law: 
-	$$P(s) = Cs^{-\beta},$$
+\boiteorange{$$P(s) = Cs^{-\beta}$$}
 	
-	$$\int_{1}^{\infty}P(s)ds=\left[ \frac{Cs^{1-\beta}}{1-\beta}\right] _{1}^{\infty}=0-\frac{C}{1-\beta}=1$$
-	
-	we get $C=\beta-1$, so \boiteorange{$$P(s) = Cs^{-\beta}=(\beta-1)s^{-\beta}$$}
 \end{frame}	
 
 
@@ -163,7 +158,7 @@ Which is to say at each scale $s$ there is a weakened yield limit $\sigma_y/s$, 
 
 \begin{frame}
 	\frametitle{Mean stress effect}	
-The idea is to consider as in the work of Maitournam and Krebs that the yield limit $\sigma_y$ can be reduced in presence of positive mean stress. The mesoscopic yield function can therefore be written as:
+The idea is to consider Maitournam and Krebs' that the yield limit $\sigma_y$ is reduced in presence of positive mean stress:
 \begin{equation}
 f\left(s\right)=||\uline{\uline{S}}(s)-\uline{\uline{b}}(s)||+\left( \lambda \Sigma_H-\sigma_y\right) /s\leqslant 0
 \label{yieldfun}
@@ -184,15 +179,15 @@ with $\uline{\uline{S}}(s)$ denoting the deviatoric part of the stress tensor at
 
 	\vspace{6pt}	
 		\item
-		$\dot{\uline{\uline{\varepsilon}}}^p(s,M,t)=\gamma\dfrac{\partial f(s,M,t)}{\partial \uline{\uline{S}}}, $ the associated plastic flow rule assuming $\gamma=0$ when $f<0$(elastic) and  $\gamma\geqslant0$ when $f=0$(plastic).
+		$\dot{\uline{\uline{\varepsilon}}}^p(s,M,t)=\gamma\dfrac{\partial f(s,M,t)}{\partial \uline{\uline{S}}}, $ associated plastic flow rule.
 \end{itemize}
 
 	\vspace{6pt}
-The local dissipated energy rate per volume at weakening scales $s$  is given by the local entropy dissipation:
-$$\dot{w}(s,M,t)=(\uline{\uline{S}}-\uline{\uline{b}})(s,M,t):\uline{\uline{\dot{\varepsilon}}}^p(s,M,t).$$
+The local dissipated energy rate per volume at weakening scales $s$  is given by:
+$$\dot{w}(s,M,t)=(\uline{\uline{S}}-\uline{\uline{b}})(s,M,t):\uline{\uline{\dot{\varepsilon}}}^p(s,M,t).$$ 
 \end{frame}
 
-\section{Construction of an energy based fatigue approach}
+\section{Damage accumulation for cyclic loads}
 \begin{frame}
 	\frametitle{Uniaxial cyclic load}	
 	\begin{figure}[h!]
@@ -234,6 +229,10 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 			\item $dW(phase 1)=dW(phase 5)=\dfrac{1}{2}dW(phase 3).$
 	    \end{itemize}	
 	\end{block}
+\end{frame}	
+
+	\begin{frame}
+		\frametitle{Cyclic load calculation}	
 	\begin{block}{Total dissipated energy $W$  at all scales during one cycle}
 		\begin{equation}
 		\begin{split}
@@ -242,12 +241,15 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 		\end{split}
 		\end{equation}
 	\end{block}
-	
-	Where $k$ is the hardening modulus.
+	\begin{block}{Damage law}
+		\begin{equation}
+N_{cyc}=f\left(\dfrac{W_{cyc}}{W_F} \right) 
+		\end{equation}
+	\end{block}
 \end{frame}	
 
 
-\section{Damage accumulation}
+\section{Damage accumulation in general case}
 \begin{frame}
 	\frametitle{Generalized damage accumulation}	
 	We combine a damage incremental law with relative increment of dissipated energy per unit time:
@@ -258,10 +260,11 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 \end{equation}
 	\end{block}
 	$W_F$ is the energy threshold of the material.	
-		\begin{block}{ Generalized damage accumulation}	
+		\begin{block}{Multi-scale dissipated energy}	
 \begin{equation}\dot{W}(M,t)=\int_{s=1}^{\infty}\dot{w}(s,M,t)P(s)ds=\int_{s=1}^{\infty}\left(\uline{\uline{S}}-\uline{\uline{b}} \right) (s,M,t):\uline{\uline{\dot{\varepsilon}^p}}(s,M,t)P(s)ds.
 \end{equation}
 		\end{block}
+		Failure when D=1.
 \end{frame}	
 
 \section{Loop on time and scales}
@@ -271,37 +274,19 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 \frametitle{Integration rules}
 	\begin{block}{}	
 \begin{itemize}
-\item There are certain limitations of cycle counting method. Firstly we need a load history decomposition in cycles. Secondly in real life the perfect close loop cycle is hardly applicable.
+\item No cycle counting. Only dissipated energy integration.
 					
 \vspace{6pt}
-\item We propose in a more general method which can be integrated using a step by step strategy. 
-					
-\vspace{6pt}
-\item Instead of doing the scale integration directly which can be difficult for complex loading, the Gaussian Quadrature rule with Legendre points is used to give the value of local dissipated energy rate.
+\item Gaussian quadrature rule for scale integration, time implicit for dissipated energy.
+
 \end{itemize}	
 \end{block}
 \end{frame}	
 
-\begin{frame}
-	\frametitle{Integration rules}
-The dissipated energy summed on all scales is:
-\begin{equation}
-	\begin{split}
-		\dot{W}&=\int_{1}^{\infty}\dot{w}(s) (\beta-1)(s)^{-\beta}ds
-			\\&=\frac{1}{2}\int_{-1}^{1}\dot{w}\left[  \left( \frac{x+1}{2}\right) ^{\frac{1}{1-\beta}}\right] dx
-			\\&\approx\frac{1}{2}\sum_{i}\omega_id\dot{w}\left[  \left( \frac{x_i+1}{2}\right) ^{\frac{1}{1-\beta}}\right],
-	\end{split}
-	\label{allscale}
-\end{equation}
-
-\vspace{6pt}
-where $\omega_i$ and $x_i$ are respectively the weights and nodes of the Gauss Legerndre integration rule used for the numerical integration. In this work, we used 25 points.
-\end{frame}
-
 \subsection{Regime determination under multiple scales}
 \begin{frame}
 	\frametitle{Regime determination}
-	The material could be both in elastic and plastic regime under different scales.
+	The material could be both in elastic and plastic regime at different scales.
 	\begin{block}{Elastic regime:}	
 \noindent
 There we have
@@ -317,35 +302,9 @@ $$\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)\leqslant\left( \sigma
 	\end{block}
 \end{frame}	
 
-\begin{frame}
-	\frametitle{Regime determination}
-	\begin{block}{Plastic regime:}	
-\begin{numcases}{}
-\dot{\uline{\uline{\varepsilon}}}^p=\gamma\dfrac{\uline{\uline{S}}-\uline{\uline{b}}}{\left| \left|\uline{\uline{S}}-\uline{\uline{b}}\right| \right|}, \gamma>0, & plastic   flow,\\
-\left| \left|\uline{\uline{S}}-\uline{\uline{b}}\right| \right|=\left( \sigma_y-\lambda \Sigma_H\right)/s, & yield   limit,\\
-\left( \uline{\uline{S}}-\uline{\uline{b}}\right) :\left( \dot{\uline{\uline{S}}}-\dot{\uline{\uline{b}}}\right) =0, & yield   limit   time invariance,\\
-\dot{\uline{\uline{b}}}=\dfrac{kE}{E-k}\dot{\uline{\uline{\varepsilon}}}^p, & kinematic   hardening  rule,\\
-\dot{\uline{\uline{S}}}=dev\dot{\uline{\uline{\Sigma}}}-\dfrac{E}{1+\nu} \dot{\uline{\uline{\varepsilon}}}^p, & localisation  rule.
-\end{numcases}
-	\end{block}
-\end{frame}	
-
 
 \begin{frame}
-	\frametitle{Regime determination}
-	
-	\begin{block}{In all cases, we get in plastic regime:}	
-\begin{equation}
-\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (s,t+dt)=\dfrac{\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial} (s,t+dt)}{1+\eta},
-\end{equation}
-
-$$\eta=max\left\lbrace \underbrace{0}_{elastic\; regime}, \underbrace{\dfrac{\left| \left|\uline{\uline{S}}-\uline{\uline{b}}\right| \right|_{trial}}{\left( \sigma_y-\lambda \Sigma_H\right)/s}-1}_{plastic \; regime\; when\; this\; number\; is\; positive}\right\rbrace. $$
-	\end{block}
- That is to say, when the structure is in elastic regime at time $t$ and scale $s$, we have $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)(s,t)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial} (s,t)$. Otherwise, if  the norm of $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial} (s,t)$ is greater than the local yield limit $\left( \sigma_y-\lambda \Sigma_H\right)/s$, $\left( \uline{\uline{S}}-\uline{\uline{b}}\right)(s,t)$ will be projected on the yield limit. 	
-\end{frame}	
-
-\begin{frame}
-	\frametitle{Regime determination}
+	\frametitle{Regime determination and damage integration}
 	\begin{block}{Final expression of energy dissipation during time step dt }	
 	\begin{equation}
 	\begin{split}

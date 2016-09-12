@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/W32TeX) (preloaded format=xelatex 2015.4.2)  5 SEP 2016 17:44
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014/W32TeX) (preloaded format=xelatex 2015.4.2)  12 SEP 2016 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,16 +1296,16 @@ Overfull \hbox (1.38435pt too wide) in paragraph at lines 59--59
  []
 
 
-Overfull \hbox (40.5105pt too wide) detected at line 59
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) detected at line 59
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 File: figures//x.jpg Graphic file (type QTm)
 <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1318,9 +1318,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1333,9 +1333,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1348,9 +1348,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1363,9 +1363,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1376,34 +1376,34 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [5
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 146.
+LaTeX Font Info:    Try loading font information for U+msa on input line 141.
  (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 146.
+LaTeX Font Info:    Try loading font information for U+msb on input line 141.
 
 (c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 146.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 146.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 146.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 146.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 146.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 146.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <6> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 146.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 146.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <5> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 146.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 146.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 141.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 141.
 
 (c:/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1411,9 +1411,9 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 File: figures//x.jpg Graphic file (type QTm)
 
 <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1427,16 +1427,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 File: figures//ps.png Graphic file (type QTm)
  <use  "figures//ps.png" >
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 160.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 160.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 155.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <7> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 160.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 155.
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1449,9 +1449,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1464,9 +1464,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1479,9 +1479,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1494,9 +1494,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1509,9 +1509,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1524,14 +1524,14 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//backstress.png Graphic file (type QTm)
  <use  "figures//backstress.png" >
-Overfull \vbox (0.27367pt too high) detected at line 203
+Overfull \vbox (0.27367pt too high) detected at line 198
  []
 
 File: figures//x.jpg Graphic file (type QTm)
 <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1544,9 +1544,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1556,12 +1556,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [14
 
-] (./FATD092016.toc)
+]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1571,12 +1571,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [15
 
-]
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1586,12 +1586,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [16
 
-] (./FATD092016.toc)
+]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1601,33 +1601,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [17
 
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
-
-(./FATD092016.toc)
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1638,11 +1617,32 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [18
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\delta' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+(./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1655,9 +1655,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1670,9 +1670,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1685,9 +1685,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1700,9 +1700,9 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 ]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1712,12 +1712,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [23
 
-]
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1727,12 +1727,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [24
 
-]
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1742,12 +1742,19 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [25
 
-] (./FATD092016.toc)
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 353.
+
+Overfull \hbox (4.58263pt too wide) in paragraph at lines 353--353
+ [] 
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1757,12 +1764,17 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [26
 
-] (./FATD092016.toc)
+]
+File: figures//trialsin.png Graphic file (type QTm)
+ <use  "figures//trialsin.png" >
+Overfull \vbox (2.4841pt too high) detected at line 364
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1773,18 +1785,13 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [27
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 394.
-
-Overfull \hbox (4.58263pt too wide) in paragraph at lines 394--394
- [] 
- []
-
+File: figures//damagesin.png Graphic file (type QTm)
+ <use  "figures//damagesin.png" >
 File: figures//x.jpg Graphic file (type QTm)
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1795,16 +1802,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [28
 
 ]
-File: figures//trialsin.png Graphic file (type QTm)
- <use  "figures//trialsin.png" >
-Overfull \vbox (2.4841pt too high) detected at line 405
- []
-
+File: figures//NCdiff100.png Graphic file (type QTm)
+ <use  "figures//NCdiff100.png" >
+File: figures//NCdiff300.png Graphic file (type QTm)
+ <use  "figures//NCdiff300.png" >
 File: figures//x.jpg Graphic file (type QTm)
+
 <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1814,14 +1821,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [29
 
-]
-File: figures//damagesin.png Graphic file (type QTm)
- <use  "figures//damagesin.png" >
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1832,16 +1837,13 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [30
 
 ]
-File: figures//NCdiff100.png Graphic file (type QTm)
- <use  "figures//NCdiff100.png" >
-File: figures//NCdiff300.png Graphic file (type QTm)
- <use  "figures//NCdiff300.png" >
+File: figures//x.png Graphic file (type QTm)
+ <use  "figures//x.png" >
 File: figures//x.jpg Graphic file (type QTm)
-
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1851,12 +1853,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [31
 
-] (./FATD092016.toc)
+]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1867,13 +1869,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [32
 
 ]
-File: figures//x.png Graphic file (type QTm)
- <use  "figures//x.png" >
+File: figures//trialreal1d1.png Graphic file (type QTm)
+ <use  "figures//trialreal1d1.png" >
+Overfull \vbox (2.32309pt too high) detected at line 428
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1884,11 +1889,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [33
 
 ]
+File: figures//trialreal1d2.png Graphic file (type QTm)
+ <use  "figures//trialreal1d2.png" >
+Overfull \vbox (2.10349pt too high) detected at line 438
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1899,16 +1909,13 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [34
 
 ]
-File: figures//trialreal1d1.png Graphic file (type QTm)
- <use  "figures//trialreal1d1.png" >
-Overfull \vbox (2.32309pt too high) detected at line 469
- []
-
+File: figures//damage1d.png Graphic file (type QTm)
+ <use  "figures//damage1d.png" >
 File: figures//x.jpg Graphic file (type QTm)
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1918,17 +1925,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [35
 
-]
-File: figures//trialreal1d2.png Graphic file (type QTm)
- <use  "figures//trialreal1d2.png" >
-Overfull \vbox (2.10349pt too high) detected at line 479
- []
-
+] (./FATD092016.toc)
 File: figures//x.jpg Graphic file (type QTm)
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1939,13 +1941,13 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [36
 
 ]
-File: figures//damage1d.png Graphic file (type QTm)
- <use  "figures//damage1d.png" >
+File: figures//xyz.png Graphic file (type QTm)
+ <use  "figures//xyz.png" >
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1955,12 +1957,12 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 
 [37
 
-] (./FATD092016.toc)
+]
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1971,13 +1973,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [38
 
 ]
-File: figures//xyz.png Graphic file (type QTm)
- <use  "figures//xyz.png" >
+File: figures//xab.png Graphic file (type QTm)
+ <use  "figures//xab.png" >
+Overfull \vbox (22.59163pt too high) detected at line 496
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -1988,11 +1993,16 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [39
 
 ]
+File: figures//trialreal3d.png Graphic file (type QTm)
+ <use  "figures//trialreal3d.png" >
+Overfull \vbox (2.32309pt too high) detected at line 506
+ []
+
 File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+<use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -2003,16 +2013,13 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [40
 
 ]
-File: figures//xab.png Graphic file (type QTm)
- <use  "figures//xab.png" >
-Overfull \vbox (22.59163pt too high) detected at line 537
- []
-
+File: figures//damage3d2.png Graphic file (type QTm)
+ <use  "figures//damage3d2.png" >
 File: figures//x.jpg Graphic file (type QTm)
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -2023,16 +2030,11 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [41
 
 ]
-File: figures//trialreal3d.png Graphic file (type QTm)
- <use  "figures//trialreal3d.png" >
-Overfull \vbox (2.32309pt too high) detected at line 547
- []
-
 File: figures//x.jpg Graphic file (type QTm)
-<use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+ <use  "figures//x.jpg" >
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -2043,13 +2045,29 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 [42
 
 ]
-File: figures//damage3d2.png Graphic file (type QTm)
- <use  "figures//damage3d2.png" >
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 542.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 542.
 File: figures//x.jpg Graphic file (type QTm)
  <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
+Overfull \hbox (48.65071pt too wide) has occurred while \output is active
+  [] [][][][][][][][][] [] [] [][][][][][] [][][][][][][][][][][][][][][][][][]
+[][]  
  []
 
 
@@ -2058,54 +2076,6 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
  []
 
 [43
-
-]
-File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
- []
-
-
-Overfull \hbox (1.38435pt too wide) has occurred while \output is active
-[][] 
- []
-
-[44
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 583.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 583.
-File: figures//x.jpg Graphic file (type QTm)
- <use  "figures//x.jpg" >
-Overfull \hbox (40.5105pt too wide) has occurred while \output is active
-  [] [][][][][][][][][] [] [] [][][][][][][][][] [][][][][][][][][][][][][][][]
-[][][][][]  
- []
-
-
-Overfull \hbox (1.38435pt too wide) has occurred while \output is active
-[][] 
- []
-
-[45
 
 ]
 \tf@nav=\write7
@@ -2117,20 +2087,20 @@ Overfull \hbox (1.38435pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `FATD092016.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
  (./FATD092016.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 584.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 584.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 543.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 543.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 543.
  ) 
 Here is how much of TeX's memory you used:
- 29163 strings out of 493734
- 548861 string characters out of 6149469
- 689566 words of memory out of 5000000
- 31806 multiletter control sequences out of 15000+600000
+ 29158 strings out of 493734
+ 548815 string characters out of 6149469
+ 684944 words of memory out of 5000000
+ 31801 multiletter control sequences out of 15000+600000
  72441 words of font info for 108 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,24n,86p,951b,744s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on FATD092016.pdf (45 pages).
+Output written on FATD092016.pdf (43 pages).
