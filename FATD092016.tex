@@ -34,7 +34,7 @@
 \subtitle{\tiny Keywords: Fatigue; Energy; High cycle; Plasticity; Mean stress}
 % Sous-titre optionnel
 
-\author{Ma Zepeng}
+\author{Ma Zepeng, Patrick Le Tallec}
 % La commande \inst{...} Permet d'afficher l' affiliation de l'intervenant.
 % Si il y a plusieurs intervenants: Marcel Dupont\inst{1}, Roger Durand\inst{2}
 % Il suffit alors d'ajouter un autre institut sur le modèle ci-dessous.
@@ -53,7 +53,7 @@
 % C'est utilisé dans les métadonnes du PDF
 
 \logo{
-	\includegraphics[scale=0.15]{figures//x.jpg}
+	\includegraphics[scale=0.2]{figures//x.jpg}
 }
 
 \begin{document}
@@ -113,8 +113,7 @@
 \item	We follow the Dang Van paradigm. The structure is elastic at the macroscopic scale. 
 \vspace{6pt}
 	
-\item	At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding,
- which contribute to energy dissipation without affecting the overall macroscopic stress.
+\item	At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding.
 \vspace{6pt}	
 
 \item	Fatigue function of energy dissipation.
@@ -125,7 +124,7 @@
 
 \begin{frame}
 	\frametitle{Statistics method}	
-From a microscopic point of view, there is a distribution of weakening scales, namely $s\in[1,\infty)$. $S_{max}$ is the macroscopic stress intensity. $\sigma_y$ is the yield limit before weakening.
+From a microscopic point of view, there is a distribution of weakening scales, namely $s\in[1,\infty)$.
 	
 	\vspace{6pt}
 	\begin{itemize}	
@@ -158,7 +157,7 @@ From a microscopic point of view, there is a distribution of weakening scales, n
 
 \begin{frame}
 	\frametitle{Mean stress effect}	
-The idea is to consider Maitournam and Krebs' that the yield limit $\sigma_y$ is reduced in presence of positive mean stress:
+The idea is to consider Maitournam and Krebs' work that the yield limit $\sigma_y$ is reduced in presence of positive mean stress:
 \begin{equation}
 f\left(s\right)=||\uline{\uline{S}}(s)-\uline{\uline{b}}(s)||+\left( \lambda \Sigma_H-\sigma_y\right) /s\leqslant 0
 \label{yieldfun}
@@ -243,7 +242,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 	\end{block}
 	\begin{block}{Damage law}
 		\begin{equation}
-N_{cyc}=f\left(\dfrac{W_{cyc}}{W_F} \right) 
+D=f\left(\dfrac{W_{cyc}}{W_F} \right) 
 		\end{equation}
 	\end{block}
 \end{frame}	
@@ -252,7 +251,7 @@ N_{cyc}=f\left(\dfrac{W_{cyc}}{W_F} \right)
 \section{Damage accumulation in general case}
 \begin{frame}
 	\frametitle{Generalized damage accumulation}	
-	We combine a damage incremental law with relative increment of dissipated energy per unit time:
+	We combine a damage incremental law with increment of dissipated energy per unit time:
 	\begin{block}{Damage incremental law}	
 \begin{equation}
 	\delta [1-(1-D)^{\gamma+1}]^{1-\alpha}=\dfrac{\dot{W}}{W_F}\delta t.
@@ -294,7 +293,7 @@ $\dot{\uline{\uline{\varepsilon}}}^p=0$, $\dot{\uline{\uline{b}}}=0$ and $\dot{\
 $$\dot{\uline{\uline{S}}}-\dot{\uline{\uline{b}}}=dev\dot{\uline{\uline{\Sigma}}},$$ 
 yielding
 \begin{equation}
-\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}(s,t+dt).
+\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}(t+dt).
 \label{trial}
 \end{equation}
 We are in elastic regime at scale $s$ as long as we satisfy
@@ -315,6 +314,7 @@ $$\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)\leqslant\left( \sigma
 	\label{finaldw}
 	\end{equation}
 	\end{block}
+We use 25 Gauss Legendre points in numerical integration.
 
 $$g_{n+1}=g_n+\dfrac{\dot{W}dt}{W_F}=g_n+\dfrac{W}{W_F},$$
 
@@ -372,24 +372,6 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 \end{figure}
 \end{frame}	
 
-\begin{frame}
-	\frametitle{Convergence test}
-	Because the step by step damage accumulation grows in a power law, so the amplitude of difference grows with time. However, the difference between the two methods swing around 0 so we could consider the numerical method converges in cyclic load calculation method.
-	\begin{figure}[htbp]
-		\begin{minipage}[t]{0.48\linewidth}
-	\centering
-	\includegraphics[width=\textwidth]{figures//NCdiff100.png} 
-	\caption{Difference between cyclic load calculation and numerical method as function of time(time step=1/5000s)}
-	\label{NCdiff100}
-		\end{minipage}
-		\begin{minipage}[t]{0.48\linewidth}
-	\centering
-	\includegraphics[width=\textwidth]{figures//NCdiff300.png} 
-	\caption{Difference between cyclic load calculation and numerical method as function of time(time step=1/15000s)}
-	\label{NCdiff300}
-		\end{minipage}
-	\end{figure} 
-\end{frame}	
 \subsection{One dimensional application to PSA data}
 
 \begin{frame}
@@ -401,20 +383,6 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 	\label{x}
 \end{figure}
 \end{frame}	
-
-\begin{frame}
-	\frametitle{One dimensional application}
- 	\begin{block}{Numerical methods:}
-
-			\begin{itemize}
-				\item 	The sample recording rate is 256 per second. In order to accumulate damage using very small steps, we have created 10 additional points between every 2 recorded points by linear interpolation.
-				\vspace{6pt}
-				\item The force on wheel is firstly considered as under uniaxial loading $F_x$. Here we temporally set $\Sigma_x=F_x/A$ where $A=\dfrac{1}{6e5} m^2$ is the area of force, and $W_F=3e6 J$. 
-		\end{itemize}
- 
-	\end{block}
-\end{frame}	
-
 
 
 \begin{frame}
@@ -452,7 +420,6 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
  \subsection{Multi-dimensional application to PSA data}
 \begin{frame}
 	\frametitle{Multi-dimensional application}
- We now consider a situation where we have force recorded measured in 3 different directions as shown in \figref{xyz}.
  \begin{figure}[!h]
  	\centering
  	\includegraphics[width=\textwidth]{figures//xyz.png} 
@@ -471,17 +438,7 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
  where $\uline{e}_{\alpha}$  and $\uline{e}_{\beta}$ are principal vectors whose spherical coordinate are $\theta_x$, $\varphi_x$,  $\theta_y$ and $\varphi_y$ respectively:
  $$\uline{e}_{\alpha}=cos\theta_x\uline{e}_1+sin\theta_xcos\varphi_x\uline{e}_2+sin\theta_xsin\varphi_x\uline{e}_3,$$
  $$\uline{e}_{\beta}=cos\theta_y\uline{e}_1+sin\theta_ycos\varphi_y\uline{e}_2+sin\theta_ysin\varphi_y\uline{e}_3.$$
- 
- \begin{table}[!h]
- 	\centering
- 	\begin{tabular}{rrrrrrrr}
- 		\hline
- 		\textbf{Parameter} & A($m^2$) & $c_x$ & $c_y$ & $\theta_x$ & $\varphi_x$ & $\theta_y$ & $\varphi_y$ \\
- 		\textbf{Value}      & 1/6e4                  & 10    & 60    & 0.5        & 0.3         & 0.6        & 0.4         \\ \hline
- 	\end{tabular}
- 	\caption{The structural data in 3D analysis}
- 	\label{structural}
- \end{table}
+
 
 \end{frame}
 
@@ -516,16 +473,18 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 
 
 \begin{frame}
-	\frametitle{Discussion}	
-		\begin{exampleblock}{Discussion}
+	\frametitle{Results and discussion}	
+		\begin{exampleblock}{ Results and discussion}
 \begin{enumerate}
-	\item We work on the stress tensor directly in 3D analysis in stead of using the multidimensional equivalent stress.
-	
+	\item We get rid of cycle counting method which for complex loading is hardly applicable.
+
+	\vspace{6pt}
+	\item The small step-by-step strategy does not ignore small fluctuations in load history and the big stress effect is magnified which reflects the real situation.
+		
 	\vspace{6pt}
 	\item   The energy based fatigue approach takes into account impurities and hardness in the material and is applicable to any type of micro plasticity law and multiaxial load geometry.
 	
-	\vspace{6pt}
-	\item The small step-by-step strategy does not ignore small fluctuations in load history and the big stress effect is magnified which reflects the real situation.
+
 	
 \end{enumerate}
 \end{exampleblock}

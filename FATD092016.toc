@@ -11,5 +11,5 @@
 \beamer@subsectionintoc {5}{2}{Regime determination under multiple scales}{21}{0}{4}
 \beamer@sectionintoc {6}{Application}{24}{0}{5}
 \beamer@subsectionintoc {6}{1}{One dimensional application to simple cyclic data}{25}{0}{5}
-\beamer@subsectionintoc {6}{2}{One dimensional application to PSA data}{30}{0}{5}
-\beamer@subsectionintoc {6}{3}{Multi-dimensional application to PSA data}{36}{0}{5}
+\beamer@subsectionintoc {6}{2}{One dimensional application to PSA data}{29}{0}{5}
+\beamer@subsectionintoc {6}{3}{Multi-dimensional application to PSA data}{34}{0}{5}
