@@ -1,6 +1,7 @@
-\documentclass[xcolor=table]{Bredelebeamer}
+\documentclass[table]{Bredelebeamer}
 
 %\usetheme{Oxygen}
+\usecolortheme{crane}
 \usepackage{amsmath}
 \usepackage{cases}
 \DeclareMathOperator{\Tr}{Tr}
@@ -26,9 +27,10 @@
 \newcommand{\Trc}[1]{\makecell[rc]{#1}} %右
 \usepackage{caption}
 \usepackage{bbm}
+\usepackage{tikz}
 \captionsetup{font={scriptsize}}
 
-\title[FATD2016]{A new strategy for fatigue analysis in presence of general multiaxial time varying loadings}
+\title[LMS]{A new strategy for fatigue analysis in presence of general multiaxial time varying loadings}
 % Titre du diaporama
 
 \subtitle{\tiny Keywords: Fatigue; Energy; High cycle; Plasticity; Mean stress}
@@ -46,7 +48,7 @@
 	}
 	
 \vspace{12pt}
-\date{\tiny 23 September 2016}
+\date{\tiny 10 November 2016}
 % Optionnel. La date, généralement celle du jour de la conférence
 
 \subject{Sujet de votre diaporama}
@@ -107,13 +109,12 @@
 \subsection{The concept of weakening scales} 
 \begin{frame}
 	\frametitle{Physical consideration}
-
 \begin{enumerate}
 
-\item	We follow the Dang Van paradigm. The structure is elastic at the macroscopic scale. 
+\item	Elastic at the macroscopic scale. 
 \vspace{6pt}
 	
-\item	At each material points, there is a stochastic distribution of weak points which will undergo strong plastic yielding.
+\item	Weak points undergo strong plastic yielding.
 \vspace{6pt}	
 
 \item	Fatigue function of energy dissipation.
@@ -121,20 +122,19 @@
 \end{frame}	
 
 
-
 \begin{frame}
 	\frametitle{Statistics method}	
-From a microscopic point of view, there is a distribution of weakening scales, namely $s\in[1,\infty)$.
+From a microscopic point of view, there is $s\in[1,\infty)$.
 	
 	\vspace{6pt}
-	\begin{itemize}	
+	\begin{itemize}	[<+->]
 \item	$1\leqslant s\leqslant \sigma_y/S_{max}$ $\longrightarrow$ $S_{max}\leqslant \sigma_y/s$ $\longrightarrow$ elastic regime $\longrightarrow$ no energy dissipation.
 
 \vspace{6pt}		
 \item	$\sigma_y/S_{max}\leqslant s\leqslant \infty$ $\longrightarrow$ $S_{max}\geqslant \sigma_y/s$ $\longrightarrow$ plastic regime $\longrightarrow$  energy dissipation.
 \end{itemize}
 	\vspace{6pt}
-	We assume the weakening scales have a probability distribution of power law: 
+
 \boiteorange{$$P(s) = Cs^{-\beta}$$}
 	
 \end{frame}	
@@ -148,7 +148,7 @@ From a microscopic point of view, there is a distribution of weakening scales, n
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{figures//ps.png} 
-		\caption{Weakening scales $s$ probability distribution curve}
+		\caption{Weakening scales $s$ probability distribution curve when $\beta=1.5$}
 		\label{ps}
 	\end{figure}
 \end{frame}	
@@ -162,14 +162,15 @@ The idea is to consider Maitournam and Krebs' work that the yield limit $\sigma_
 f\left(s\right)=||\uline{\uline{S}}(s)-\uline{\uline{b}}(s)||+\left( \lambda \Sigma_H-\sigma_y\right) /s\leqslant 0
 \label{yieldfun}
 \end{equation}
-with $\uline{\uline{S}}(s)$ denoting the deviatoric part of the stress tensor at microscale, and $\uline{\uline{b}}(s)$ the corresponding backstress at the same scale.
+In elastic regime:
+$$||\uline{\uline{S}}(s)-\uline{\uline{b}}(s)||< \left( \sigma_y-\lambda \Sigma_H\right) /s$$
 \end{frame}	
 
 \subsection{Local plastic model}
 \begin{frame}
 	\frametitle{Description of the mesoscopic stress state}	
 
-\begin{itemize}
+\begin{itemize}	[<+->]
 	\item $\dot{\uline{\uline{S}}}(s,M,t)=dev\dot{\uline{\uline{\Sigma}}}(M,t)-\dfrac{E}{1+\nu}\dot{\uline{\uline{\varepsilon}}}^p(s,M,t),$ Taylor-Lin scale transition model.
 
 	\vspace{6pt}	
@@ -186,7 +187,7 @@ The local dissipated energy rate per volume at weakening scales $s$  is given by
 $$\dot{w}(s,M,t)=(\uline{\uline{S}}-\uline{\uline{b}})(s,M,t):\uline{\uline{\dot{\varepsilon}}}^p(s,M,t).$$ 
 \end{frame}
 
-\section{Damage accumulation for cyclic loads}
+\section{Energy dissipation for cyclic loads}
 \begin{frame}
 	\frametitle{Uniaxial cyclic load}	
 	\begin{figure}[h!]
@@ -220,7 +221,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 \begin{frame}
 	\frametitle{Cyclic load calculation}	
 	\begin{block}{Energy dissipation at one scale s}
-		\begin{itemize}
+		\begin{itemize}	[<+->]
 			\item $dW=(S-b)d\varepsilon^p=\dfrac{(E-k)(1+\nu) }{E(E+k\nu)}\dfrac{\sigma_y-\lambda \Sigma_H}{s}\left(S_{max}-\dfrac{\sigma_y-\lambda \Sigma_H}{s}\right)
 			$ (phase 1)
 			
@@ -245,6 +246,7 @@ In uniaxial cyclic loading, there will be 3 kinds of loading patterns:
 D=f\left(\dfrac{W_{cyc}}{W_F} \right) 
 		\end{equation}
 	\end{block}
+	$W_F$ is the energy threshold of the material.	Failure when D=1.
 \end{frame}	
 
 
@@ -254,16 +256,16 @@ D=f\left(\dfrac{W_{cyc}}{W_F} \right)
 	We combine a damage incremental law with increment of dissipated energy per unit time:
 	\begin{block}{Damage incremental law}	
 \begin{equation}
-	\delta [1-(1-D)^{\gamma+1}]^{1-\alpha}=\dfrac{\dot{W}}{W_F}\delta t.
+	\dfrac{\delta [1-(1-D)^{\gamma+1}]^{1-\alpha}}{\left(1-\alpha \right) \left(1+\gamma \right) }=\dfrac{\dot{W}}{W_F}\delta t.
 	\label{dt}
 \end{equation}
 	\end{block}
-	$W_F$ is the energy threshold of the material.	
-		\begin{block}{Multi-scale dissipated energy}	
-\begin{equation}\dot{W}(M,t)=\int_{s=1}^{\infty}\dot{w}(s,M,t)P(s)ds=\int_{s=1}^{\infty}\left(\uline{\uline{S}}-\uline{\uline{b}} \right) (s,M,t):\uline{\uline{\dot{\varepsilon}^p}}(s,M,t)P(s)ds.
+
+		\begin{block}{Multi-scale energy dissipation rate}	
+\begin{equation}\dot{W}(M,t)=\int_{s=1}^{\infty}\dot{w}(s,M,t)P(s)ds=\int_{s=1}^{\infty}\left(\uline{\uline{S}}-\uline{\uline{b}} \right) (s,M,t):\uline{\uline{\dot{\varepsilon}}}^p(s,M,t)P(s)ds.
 \end{equation}
 		\end{block}
-		Failure when D=1.
+
 \end{frame}	
 
 \section{Loop on time and scales}
@@ -272,11 +274,11 @@ D=f\left(\dfrac{W_{cyc}}{W_F} \right)
 \begin{frame}
 \frametitle{Integration rules}
 	\begin{block}{}	
-\begin{itemize}
+\begin{itemize}	[<+->]
 \item No cycle counting. Only dissipated energy integration.
 					
 \vspace{6pt}
-\item Gaussian quadrature rule for scale integration, time implicit for dissipated energy.
+\item Gaussian Quadrature rule for scale integration, time implicit for dissipated energy.
 
 \end{itemize}	
 \end{block}
@@ -285,22 +287,30 @@ D=f\left(\dfrac{W_{cyc}}{W_F} \right)
 \subsection{Regime determination under multiple scales}
 \begin{frame}
 	\frametitle{Regime determination}
-	The material could be both in elastic and plastic regime at different scales.
-	\begin{block}{Elastic regime:}	
+
+	\begin{block}{Numerically at scale $s$:}	
 \noindent
 There we have
 $\dot{\uline{\uline{\varepsilon}}}^p=0$, $\dot{\uline{\uline{b}}}=0$ and $\dot{\uline{\uline{S}}}=dev\dot{\uline{\uline{\Sigma}}}$, so
 $$\dot{\uline{\uline{S}}}-\dot{\uline{\uline{b}}}=dev\dot{\uline{\uline{\Sigma}}},$$ 
 yielding
 \begin{equation}
-\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}(t+dt).
+\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t)+dev\dot{\uline{\uline{\Sigma}}}dt:=\left(  \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial},
 \label{trial}
 \end{equation}
-We are in elastic regime at scale $s$ as long as we satisfy
-$$\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)\leqslant\left( \sigma_y-\lambda \Sigma_H\right)/s.$$	
-	\end{block}
-\end{frame}	
 
+no energy dissipation if: 
+
+$$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}\leqslant\left( \sigma_y-\lambda \Sigma_H\right)/s \Rightarrow \left( \uline{\uline{S}}-\uline{\uline{b}}\right)(t+dt)=\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}.$$
+
+
+\end{block}
+\end{frame}	
+\begin{comment}
+Energy dissipation:	
+
+$$\left( \uline{\uline{S}}-\uline{\uline{b}}\right)_{trial}>\left( \sigma_y-\lambda \Sigma_H\right)/s \Rightarrow \left( \uline{\uline{S}}-\uline{\uline{b}}\right)(t+dt)=\left( \sigma_y-\lambda \Sigma_H\right)/s.$$
+\end{comment}
 
 \begin{frame}
 	\frametitle{Regime determination and damage integration}
@@ -314,25 +324,23 @@ $$\left( \uline{\uline{S}}-\uline{\uline{b}}\right) (t+dt)\leqslant\left( \sigma
 	\label{finaldw}
 	\end{equation}
 	\end{block}
-We use 25 Gauss Legendre points in numerical integration.
+We use 64 Gauss Legendre points $x_i$, giving 64 weakening scales $s_i=\left( \dfrac{x_i+1}{2}\right)^{\frac{1}{1-\beta}}$.
 
-$$g_{n+1}=g_n+\dfrac{\dot{W}dt}{W_F}=g_n+\dfrac{W}{W_F},$$
+$$g_{n+1}=g_n+(1-\alpha)(\gamma+1)\dfrac{\dot{W}dt}{W_F}=g_n+(1-\alpha)(\gamma+1)\dfrac{W}{W_F},$$
 
-with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}}  \right] $.
+with $g_n=\left[ 1-\left( 1-D_{n}\right)^{\gamma+1} \right]^{1-\alpha}$.
 
 \end{frame}	
 
 \section{Application}
-\subsection{One dimensional application to simple cyclic data}
-
 \begin{frame}
 	\frametitle{Material parameters}
-	The test is performed on a sinusoidal axial load $\Sigma=Csin(t)$, giving the deviatoric amplitude $S_{max}=\sqrt{\dfrac{2}{3}}C$.
+	Sinusoidal axial load $\Sigma=Csin(t)$, meaning the deviatoric amplitude $S_{max}=\sqrt{\dfrac{2}{3}}Csin(t)$.
 \begin{table}[!h]
-	\centering
-	\begin{tabular}{ll}
+\rowcolors{2}{craneorange!25}{craneorange!50}  
+	\begin{tabular}{ll}  
 		\hline
-		\textbf{Parameters}                                         & \textbf{Value}                    \\ \hline
+	\rowcolor{craneorange}	\textbf{Parameters}                                         & \textbf{Value}                    \\ \hline
 		Load                                                              & $\Sigma=5e8sin(t)$ Pa                  \\
 		Young's modulus                                             & $E=2e11$ Pa                       \\
 		Hardening parameter                                         &  $k=6e8$ Pa \\
@@ -376,11 +384,10 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=\textwidth]{figures//Damagediff.png} 
-		\caption{Difference between cyclic load calculation and numerical method}
+	\caption{$\dfrac{D_{cyclic}-D_{numerical}}{D_{cyclic}}$ evolution with time}
 		\label{Damagediff}
 	\end{figure}
 \end{frame}	
-\subsection{One dimensional application to PSA data}
 
 \begin{frame}
 	\frametitle{One dimensional application}
@@ -397,20 +404,10 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 	\frametitle{One dimensional application}
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=\textwidth]{figures//trialreal1d1.png} 
+	\includegraphics[width=\textwidth]{figures//trialreal1d.png} 
 	\caption{$\left\|  \uline{\uline{S}}-\uline{\uline{b}}\right\| _{trial}$ and $\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|$ evolution with time under different weakening scales in PSA load history}
 	\label{trialreal}
 \end{figure}
-\end{frame}	
-
-\begin{frame}
-	\frametitle{One dimensional application}
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[width=\textwidth]{figures//trialreal1d2.png} 
-		\caption{Circled area magnification where there is more $\left\| \uline{\uline{S}}-\uline{\uline{b}}\right\|_{trial}>\sigma_y$(plasticity) at scale $s_1$ than at $s_8$}
-		\label{trialreal1d3}
-	\end{figure}
 \end{frame}	
 
 \begin{frame}
@@ -424,8 +421,6 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 \end{frame}	
 
 
-
- \subsection{Multi-dimensional application to PSA data}
 \begin{frame}
 	\frametitle{Multi-dimensional application}
  \begin{figure}[!h]
@@ -436,29 +431,30 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
  \end{figure}
 \end{frame}	
 
+\begin{comment}
 \begin{frame}
-	\frametitle{Multi-dimensional application}
- In real case, the vertical force $F_z$ is much larger than the axial and horizontal forces $F_x$ and $F_y$. However, in order to investigate large domains of interest, we first scale the axial and horizontal forces to reach comparable impact and transform them in principal stresses $c_x\dfrac{F_x}{A}$ applied along the stress principle vector $\uline{e}_\alpha$(respectively $\uline{e}_\beta$) that we choose randomly. We therefore consider the following macroscopic stress tensor:
- \begin{equation}
- \uline{\uline{\Sigma}}=\dfrac{F_z(t)}{A}\uline{e}_1\otimes \uline{e}_1+c_x\dfrac{F_x(t)}{A}\uline{e}_{\alpha}\otimes \uline{e}_{\alpha}+c_y\dfrac{F_y(t)}{A}\uline{e}_{\beta}\otimes \uline{e}_{\beta}
- \label{tensor1}
- \end{equation}
- where $\uline{e}_{\alpha}$  and $\uline{e}_{\beta}$ are principal vectors whose spherical coordinate are $\theta_x$, $\varphi_x$,  $\theta_y$ and $\varphi_y$ respectively:
- $$\uline{e}_{\alpha}=cos\theta_x\uline{e}_1+sin\theta_xcos\varphi_x\uline{e}_2+sin\theta_xsin\varphi_x\uline{e}_3,$$
- $$\uline{e}_{\beta}=cos\theta_y\uline{e}_1+sin\theta_ycos\varphi_y\uline{e}_2+sin\theta_ysin\varphi_y\uline{e}_3.$$
-
-
+\frametitle{Multi-dimensional application}
+In order to investigate large domains of interest, We therefore consider the following macroscopic stress tensor:
+\begin{equation}
+\uline{\uline{\Sigma}}=\dfrac{F_z(t)}{A}\uline{e}_1\otimes \uline{e}_1+c_x\dfrac{F_x(t)}{A}\uline{e}_{\alpha}\otimes \uline{e}_{\alpha}+c_y\dfrac{F_y(t)}{A}\uline{e}_{\beta}\otimes \uline{e}_{\beta}
+\label{tensor1}
+\end{equation}
+where $\uline{e}_{\alpha}$  and $\uline{e}_{\beta}$ are principal vectors whose spherical coordinate are $\theta_x$, $\varphi_x$,  $\theta_y$ and $\varphi_y$ respectively:
+$$\uline{e}_{\alpha}=cos\theta_x\uline{e}_1+sin\theta_xcos\varphi_x\uline{e}_2+sin\theta_xsin\varphi_x\uline{e}_3,$$
+$$\uline{e}_{\beta}=cos\theta_y\uline{e}_1+sin\theta_ycos\varphi_y\uline{e}_2+sin\theta_ysin\varphi_y\uline{e}_3.$$
 \end{frame}
+\end{comment}
 
 \begin{frame}
-	\frametitle{Multi-dimensional application}
-  \begin{figure}[!h]
-  	\centering
-  	\includegraphics[width=0.7\textwidth]{figures//xab.png} 
-  	\caption{Loading in 3 different directions}
-  	\label{xab}
-  \end{figure}
+\frametitle{Multi-dimensional application}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.7\textwidth]{figures//xab.png} 
+\caption{Loading in 3 different directions}
+\label{xab}
+\end{figure}
 \end{frame}	
+
 
 \begin{frame}
 	\frametitle{Multi-dimensional application}
@@ -483,29 +479,30 @@ with $D_n=\left[1-\left(1-g_n^{\frac{1}{1-\alpha}} \right)^{\frac{1}{\gamma+1}} 
 \begin{frame}
 	\frametitle{Results and discussion}	
 		\begin{exampleblock}{ Results and discussion}
-\begin{enumerate}
-	\item We get rid of cycle counting method which for complex loading is hardly applicable.
-
-	\vspace{6pt}
-	\item The small step-by-step strategy does not ignore small fluctuations in load history and the big stress effect is magnified which reflects the real situation.
+\begin{itemize}[<+->]
+	\item  Energy approach takes into account impurities and hardness in the material and is applicable to any type of micro plasticity law and multiaxial load geometry.
 		
 	\vspace{6pt}
-	\item   The energy based fatigue approach takes into account impurities and hardness in the material and is applicable to any type of micro plasticity law and multiaxial load geometry.
+	\item The time implicit strategy gets rid of cycle counting which is hardly applicable to complex loading, big fluctuation is magnified which reflects the real situation.
 	
-
+	\vspace{6pt}
+\item The strategy can be made more complex by introducing a local space averaging process, and by taking more general plastic flows.
 	
-\end{enumerate}
+\end{itemize}
 \end{exampleblock}
 \end{frame}	
 
 
-\begin{frame}
-	\frametitle{}	
-	\begin{exampleblock}{}
-		{
-			\Huge $$Thanks \, for \, your \, attention!$$
-		}	  
-	\end{exampleblock}
-\end{frame}			
+{ % all template changes are local to this group.
+	\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+		\begin{tikzpicture}[remember picture,overlay]
+		\node[at=(current page.center)] {
+			\includegraphics[width=\paperwidth]{figures//Thankyou.jpg} 
+		};
+		\end{tikzpicture}
+	\end{frame}
+}
+		
 \end{document}
 

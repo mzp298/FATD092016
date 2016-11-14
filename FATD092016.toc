@@ -2,14 +2,11 @@
 \select@language {french}
 \beamer@sectionintoc {2}{Weakening scales and yield function}{3}{0}{1}
 \beamer@subsectionintoc {2}{1}{The concept of weakening scales}{4}{0}{1}
-\beamer@subsectionintoc {2}{2}{Yield function with mean stress effect}{8}{0}{1}
-\beamer@subsectionintoc {2}{3}{Local plastic model}{10}{0}{1}
-\beamer@sectionintoc {3}{Damage accumulation for cyclic loads}{12}{0}{2}
-\beamer@sectionintoc {4}{Damage accumulation in general case}{16}{0}{3}
-\beamer@sectionintoc {5}{Loop on time and scales}{18}{0}{4}
-\beamer@subsectionintoc {5}{1}{Integration rules for $\mathaccentV {dot}05F{W}$ and $\delta D$}{19}{0}{4}
-\beamer@subsectionintoc {5}{2}{Regime determination under multiple scales}{21}{0}{4}
-\beamer@sectionintoc {6}{Application}{24}{0}{5}
-\beamer@subsectionintoc {6}{1}{One dimensional application to simple cyclic data}{25}{0}{5}
-\beamer@subsectionintoc {6}{2}{One dimensional application to PSA data}{30}{0}{5}
-\beamer@subsectionintoc {6}{3}{Multi-dimensional application to PSA data}{35}{0}{5}
+\beamer@subsectionintoc {2}{2}{Yield function with mean stress effect}{9}{0}{1}
+\beamer@subsectionintoc {2}{3}{Local plastic model}{11}{0}{1}
+\beamer@sectionintoc {3}{Energy dissipation for cyclic loads}{15}{0}{2}
+\beamer@sectionintoc {4}{Damage accumulation in general case}{20}{0}{3}
+\beamer@sectionintoc {5}{Loop on time and scales}{22}{0}{4}
+\beamer@subsectionintoc {5}{1}{Integration rules for $\mathaccentV {dot}05F{W}$ and $\delta D$}{23}{0}{4}
+\beamer@subsectionintoc {5}{2}{Regime determination under multiple scales}{26}{0}{4}
+\beamer@sectionintoc {6}{Application}{29}{0}{5}
